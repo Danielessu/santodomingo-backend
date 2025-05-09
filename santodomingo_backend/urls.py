@@ -20,6 +20,6 @@ from restaurante.views import WelcomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('restaurante.urls')),
+    path('', include('restaurante.urls')),
     path('', WelcomeView.as_view(), name='home'),
 ]
